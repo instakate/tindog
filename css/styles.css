@@ -1,11 +1,6 @@
-.ubuntu {
-  font-family: 'Ubuntu', sans-serif;
-}
-
-
 body {
   font-family: 'Montserrat', sans-serif;
-  position: absolute;
+  /* position: absolute; */
   text-align: center;
 }
 
@@ -34,6 +29,16 @@ p {
   padding: 7% 15%;
 }
 
+/* Sections */
+.colored-section {
+    color: #fff;
+    background-color: #FF4C68;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
 /* Navigation bar */
 .navbar {
   padding: 0 0 4.5rem;
@@ -60,13 +65,8 @@ p {
 }
 
 /* title section */
-#title {
-  background-color: #FF4C68;
-  color: #fff;
-  text-align: left;
-}
-
 #title .container-fluid {
+  text-align: left;
   padding: 3% 15% 7%;
 }
 
@@ -80,11 +80,10 @@ p {
 
 /* features*/
 #features {
-  background-color: #fff;
   position: relative;
+  }
   /* don't need z-index: 1; because positioned elements
 (elements with a position) are on top */
-}
 
 .feature-title {
   font-size: 1.5 rem;
@@ -104,15 +103,15 @@ p {
 }
 
 /* testimonial section  */
+
 #testimonials {
-  background-color: #EF8172;
-  color: #fff;
+  background-color: #ef8172;
 }
 
- testimonial-text {
-   font-size: 3rem;
-   line-height: 1.5;
- }
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
 
 .testimonial-image {
   width: 10%;
@@ -120,8 +119,9 @@ p {
   margin: 20px;
 }
 
+
 #press {
-  background-color: #Ef8172;
+  background-color: #ef8172;
   padding-bottom: 3%;
 }
 
@@ -145,30 +145,25 @@ p {
   padding: 3% 2%;
 }
 
-.card-header { font-size: 1.5rem; }
-
-@media (max-width: 1028px) {
-  #title {
-  }
-
-  .title-image {
-    position: static;
-    transform: rotate(0);
-  }
-}
-
-#cta {
-  background-color: #FF4C68;
-  color: #fff;
-}
-
+/* .card-header { font-size: 1.5rem; } */
 
 #footer {
-  background-color: #fff;
   padding: 50px;
 }
 
 .social-icon {
   color: #696969;
   margin: 20px 10px;
+}
+
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
 }
